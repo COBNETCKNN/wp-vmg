@@ -1,0 +1,29 @@
+[24-Jun-2021 21:42:58 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'remove_content_editor' not found or invalid function name in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php on line 292
+[24-Jun-2021 21:42:58 UTC] PHP Stack trace:
+[24-Jun-2021 21:42:58 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\post.php:0
+[24-Jun-2021 21:42:58 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\post.php:206
+[24-Jun-2021 21:42:58 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\edit-form-advanced.php:425
+[24-Jun-2021 21:42:58 UTC] PHP   4. do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\admin-header.php:147
+[24-Jun-2021 21:42:58 UTC] PHP   5. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\plugin.php:484
+[24-Jun-2021 21:42:58 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php:316
+[24-Jun-2021 21:43:07 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'remove_content_editor' not found or invalid function name in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php on line 292
+[24-Jun-2021 21:43:07 UTC] PHP Stack trace:
+[24-Jun-2021 21:43:07 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\post.php:0
+[24-Jun-2021 21:43:07 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\post.php:206
+[24-Jun-2021 21:43:07 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\edit-form-advanced.php:425
+[24-Jun-2021 21:43:07 UTC] PHP   4. do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\admin-header.php:147
+[24-Jun-2021 21:43:07 UTC] PHP   5. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\plugin.php:484
+[24-Jun-2021 21:43:07 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php:316
+[24-Jun-2021 21:43:26 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'remove_content_editor' not found or invalid function name in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php on line 292
+[24-Jun-2021 21:43:26 UTC] PHP Stack trace:
+[24-Jun-2021 21:43:26 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\post.php:0
+[24-Jun-2021 21:43:26 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\post.php:206
+[24-Jun-2021 21:43:26 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\edit-form-advanced.php:425
+[24-Jun-2021 21:43:26 UTC] PHP   4. do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\admin-header.php:147
+[24-Jun-2021 21:43:26 UTC] PHP   5. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\plugin.php:484
+[24-Jun-2021 21:43:26 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php:316
+[24-Jun-2021 21:48:56 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\functions.php on line 55
+[24-Jun-2021 21:48:56 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\functions.php on line 55
+[24-Jun-2021 21:48:56 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\functions.php on line 55
+[24-Jun-2021 21:48:56 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\functions.php on line 55
+[24-Jun-2021 21:48:56 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\functions.php on line 55

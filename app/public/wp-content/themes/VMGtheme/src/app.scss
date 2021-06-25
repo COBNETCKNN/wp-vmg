@@ -2,3 +2,99 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+// importing fonts 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu-item {
+    margin-left: 31px;
+    margin-right: 31px;
+}
+
+.menu-item {
+    font-size: 18.4px;
+    letter-spacing: -1.5%;
+}
+
+.footer-line {
+    padding: 0.5px;
+}
+
+.menu-extra-footer-menu-container {
+    .menu {
+        .menu-item {
+					margin-left: 31px;
+					margin-right: 0;					
+        }
+
+				.menu-item:hover {
+					color: #D1D5DB;
+				}
+    }
+}
+
+.menu-footer-menu-container {
+        .menu {
+        .menu-item {
+            a:hover {
+                color: #9CA3AF;
+            }
+        }
+    }
+}
+
+.hero__background {
+    height: 100%;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+}
+
+.hero__button {
+    position: absolute;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 55vh;
+}
+
+.hero__vector {
+    position: absolute;
+    z-index: 10;
+    top: 20vh;
+    right:0;
+}
+
+.hero__stats {
+    position: absolute;
+    z-index: 10;
+    bottom: -38vh;
+    right: 4%;
+}
+
+.hero__messages {
+    position: absolute;
+    z-index: 10;
+    top: 68vh;
+    right: 10%;
+}
+
+.hero__card {
+    position: absolute;
+    z-index: 10;
+    bottom: -20vh;
+    left: 12%;
+}
