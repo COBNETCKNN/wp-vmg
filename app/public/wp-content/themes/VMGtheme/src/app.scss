@@ -98,3 +98,17 @@ html, body {
     bottom: -20vh;
     left: 12%;
 }
+
+#about {
+    background-color: white;
+    background: url("../images/aboutBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    height: 100vh;
+    margin-top: -250px;
+}
+
+.attachment-servicesIcon {
+    width: 50px;
+    height: 50px;
+}

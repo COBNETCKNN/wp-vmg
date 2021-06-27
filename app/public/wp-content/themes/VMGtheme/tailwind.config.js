@@ -13,6 +13,8 @@ module.exports = {
         header: '#16b4eb',
         footer: '#0D0D0D',
         btnpurple: '#C438EF',
+        servicetitle: '#3B3E43',
+        servicecontent: '#595E64',
 
       }
     },

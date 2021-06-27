@@ -19,7 +19,10 @@ add_action('wp_enqueue_scripts', 'vmgtheme_files');
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
 
-//custom site logo
+/* CUSTOM IMAGE SIZES */
+add_image_size('servicesIcon', 50, 50, true);
+
+/* CUSTOM LOGO */
 function vmg_custom_logo() {
 	
 	add_theme_support( 'custom-logo', array(
@@ -59,4 +62,28 @@ function hide_editor() {
 }
 add_action( 'admin_head', 'hide_editor' );
 
+
+/* CUSTOM POST TYPES */
+function vmg_post_types() {
+
+    //custom post type for services/what we do
+    register_post_type('service', array(
+        'public' => true,
+        'labels' => array(
+            'name' => 'Services',
+            'add_new' => 'Add New Service',
+            'add_new_item' => 'Add New Service',
+            'edit_item' => 'Edit Service',
+            'all_items' => 'All Services',
+            'singular_name' => 'Service'
+        ),
+        'menu_icon' => 'dashicons-megaphone',
+        'supports' => array('title', 'editor', 'thumbnail'),
+    ));
+
+}
+add_action('init', 'vmg_post_types');
+
+
+//custom post type for services/what we do
 
