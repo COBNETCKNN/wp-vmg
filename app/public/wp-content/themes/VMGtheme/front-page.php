@@ -51,4 +51,56 @@
   </div>
 </section>
 
+<!-- ORU PROCESS SECTION -->
+<section id="process" class="w-screen font-dmsans">
+  <div class="container mx-auto">
+    <div class="pt-48 text-center">
+      <p class="text-xs uppercase text-white tracking-widest opacity-50">How it works</p>
+      <h1 class="text-5xl text-white mt-3.5">Our Process</h1>
+      <p class="text-xl text-white font-thin leading-loose mt-6 mb-8">We know the best solution for all of your business ideas and we can help you <br> solve all business problems</p>
+    </div>
+
+
+      <?php 
+    
+      //query for services post type
+      $args = array(
+        'post_type' => 'process',
+        'orderby' => 'date',
+        'order' => 'ASC',      
+        'posts_per_page' => 3,  
+      );
+
+      $processQuery = new WP_Query($args);
+
+      while($processQuery->have_posts()){
+        $processQuery->the_post(); 
+        
+        //acf field for icon
+        $processIcon = get_field('process_icon');
+
+        ?>
+
+        <div class="py-11 px-20 bg-white rounded-3xl mb-10 w-11/12 mx-auto">
+          <div class="grid grid-cols-2 gap-4">
+            <!-- IMAGE -->
+            <div class="flex justify-start">
+              <?php the_post_thumbnail('processThumbnail', array('class' => 'rounded-3xl flex justify-center')); ?>
+            </div>
+            <!-- CONTENT -->
+            <div class="">
+              <img class="process__icon" src="<?php echo $processIcon; ?>" alt="">
+              <h2 class="text-servicetitle text-2xl font-semibold mt-8"><?php the_title(); ?></h2>
+              <p class="mt-4 text-base text-serviceContent"><?php the_content(); ?></p>
+            </div>
+          </div>
+        </div>
+
+
+        <?php } 
+          wp_reset_postdata();
+        ?>
+  </div>
+</section>
+
 <?php get_footer(); ?>

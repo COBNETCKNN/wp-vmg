@@ -21,6 +21,7 @@ add_theme_support('menus');
 
 /* CUSTOM IMAGE SIZES */
 add_image_size('servicesIcon', 50, 50, true);
+add_image_size('processThumbnail', 466, 232, true);
 
 /* CUSTOM LOGO */
 function vmg_custom_logo() {
@@ -81,9 +82,21 @@ function vmg_post_types() {
         'supports' => array('title', 'editor', 'thumbnail'),
     ));
 
+    //custom post type for services/what we do
+    register_post_type('process', array(
+        'public' => true,
+        'labels' => array(
+            'name' => 'Our Process',
+            'add_new' => 'Add New Process',
+            'add_new_item' => 'Add New Process',
+            'edit_item' => 'Edit Process',
+            'all_items' => 'All Processes',
+            'singular_name' => 'Process'
+        ),
+        'menu_icon' => 'dashicons-admin-generic',
+        'supports' => array('title', 'editor', 'thumbnail'),
+    ));
+
 }
 add_action('init', 'vmg_post_types');
-
-
-//custom post type for services/what we do
 
