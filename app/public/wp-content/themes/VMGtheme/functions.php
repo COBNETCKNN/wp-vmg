@@ -5,12 +5,14 @@ function vmgtheme_files() {
 
     //enqueing CSS
         wp_enqueue_style('mainCSS', get_template_directory_uri() . '/css/main.css');
+        wp_enqueue_style('slickCSS', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
 
 
     //enqueing JS
         wp_enqueue_script( 'jquery' );
         wp_enqueue_script('mainJS', get_stylesheet_directory_uri() . '/js/main.js', array(), 1.0, true);
         wp_enqueue_script('fontAwesome', 'https://kit.fontawesome.com/24bc428ad4.js');
+        wp_enqueue_script('slickJS', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array(), 1.0, true);
 
 }
 add_action('wp_enqueue_scripts', 'vmgtheme_files');
@@ -60,6 +62,14 @@ function hide_editor() {
     if($homepgname == 'Hero'){ 
         remove_post_type_support('page', 'editor');
         }
+
+    $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+    if( !isset( $post_id ) ) return;
+
+    $ourClients = get_the_title($post_id);
+    if($homepgname == 'Our Clients'){ 
+        remove_post_type_support('page', 'editor');
+        }
 }
 add_action( 'admin_head', 'hide_editor' );
 
@@ -76,10 +86,11 @@ function vmg_post_types() {
             'add_new_item' => 'Add New Service',
             'edit_item' => 'Edit Service',
             'all_items' => 'All Services',
-            'singular_name' => 'Service'
+            'singular_name' => 'Service',
         ),
         'menu_icon' => 'dashicons-megaphone',
         'supports' => array('title', 'editor', 'thumbnail'),
+        'has_archive' => true
     ));
 
     //custom post type for services/what we do
@@ -95,8 +106,18 @@ function vmg_post_types() {
         ),
         'menu_icon' => 'dashicons-admin-generic',
         'supports' => array('title', 'editor', 'thumbnail'),
+        'has_archive' => true
     ));
 
 }
 add_action('init', 'vmg_post_types');
+
+// ADDING SUPPORT FOR SVG CLIENT LOGOS
+function add_file_types_to_uploads($file_types){
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg+xml';
+    $file_types = array_merge($file_types, $new_filetypes );
+    return $file_types;
+    }
+add_filter('upload_mimes', 'add_file_types_to_uploads');
 

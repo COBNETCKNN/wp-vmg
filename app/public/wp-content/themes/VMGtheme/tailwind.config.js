@@ -15,6 +15,8 @@ module.exports = {
         btnpurple: '#C438EF',
         servicetitle: '#3B3E43',
         servicecontent: '#595E64',
+        brandcontent: '#00A077',
+        bottomclient: '#424A4D',
 
       }
     },

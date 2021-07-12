@@ -28,3 +28,49 @@
 [24-Jun-2021 21:48:56 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\functions.php on line 55
 [24-Jun-2021 21:48:56 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\functions.php on line 55
 [27-Jun-2021 20:36:41 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\front-page.php on line 81
+[12-Jul-2021 17:00:19 UTC] PHP Warning:  ltrim() expects parameter 1 to be string, array given in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\formatting.php on line 4315
+[12-Jul-2021 17:00:19 UTC] PHP Stack trace:
+[12-Jul-2021 17:00:19 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\index.php:0
+[12-Jul-2021 17:00:19 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\index.php:17
+[12-Jul-2021 17:00:19 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-blog-header.php:19
+[12-Jul-2021 17:00:19 UTC] PHP   4. include() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\template-loader.php:106
+[12-Jul-2021 17:00:19 UTC] PHP   5. esc_url() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\front-page.php:135
+[12-Jul-2021 17:00:19 UTC] PHP   6. ltrim() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\formatting.php:4315
+[12-Jul-2021 17:00:19 UTC] PHP Warning:  ltrim() expects parameter 1 to be string, array given in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\formatting.php on line 4315
+[12-Jul-2021 17:00:19 UTC] PHP Stack trace:
+[12-Jul-2021 17:00:19 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\index.php:0
+[12-Jul-2021 17:00:19 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\index.php:17
+[12-Jul-2021 17:00:19 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-blog-header.php:19
+[12-Jul-2021 17:00:19 UTC] PHP   4. include() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\template-loader.php:106
+[12-Jul-2021 17:00:19 UTC] PHP   5. esc_url() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\front-page.php:135
+[12-Jul-2021 17:00:19 UTC] PHP   6. ltrim() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\formatting.php:4315
+[12-Jul-2021 17:00:19 UTC] PHP Warning:  ltrim() expects parameter 1 to be string, array given in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\formatting.php on line 4315
+[12-Jul-2021 17:00:19 UTC] PHP Stack trace:
+[12-Jul-2021 17:00:19 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\index.php:0
+[12-Jul-2021 17:00:19 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\index.php:17
+[12-Jul-2021 17:00:19 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-blog-header.php:19
+[12-Jul-2021 17:00:19 UTC] PHP   4. include() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\template-loader.php:106
+[12-Jul-2021 17:00:19 UTC] PHP   5. esc_url() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\front-page.php:135
+[12-Jul-2021 17:00:19 UTC] PHP   6. ltrim() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\formatting.php:4315
+[12-Jul-2021 17:00:19 UTC] PHP Warning:  ltrim() expects parameter 1 to be string, array given in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\formatting.php on line 4315
+[12-Jul-2021 17:00:19 UTC] PHP Stack trace:
+[12-Jul-2021 17:00:19 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\index.php:0
+[12-Jul-2021 17:00:19 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\index.php:17
+[12-Jul-2021 17:00:19 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-blog-header.php:19
+[12-Jul-2021 17:00:19 UTC] PHP   4. include() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\template-loader.php:106
+[12-Jul-2021 17:00:19 UTC] PHP   5. esc_url() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\front-page.php:135
+[12-Jul-2021 17:00:19 UTC] PHP   6. ltrim() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\formatting.php:4315
+[12-Jul-2021 17:00:19 UTC] PHP Warning:  ltrim() expects parameter 1 to be string, array given in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\formatting.php on line 4315
+[12-Jul-2021 17:00:19 UTC] PHP Stack trace:
+[12-Jul-2021 17:00:19 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\index.php:0
+[12-Jul-2021 17:00:19 UTC] PHP   2. require() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\index.php:17
+[12-Jul-2021 17:00:19 UTC] PHP   3. require_once() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-blog-header.php:19
+[12-Jul-2021 17:00:19 UTC] PHP   4. include() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\template-loader.php:106
+[12-Jul-2021 17:00:19 UTC] PHP   5. esc_url() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\front-page.php:135
+[12-Jul-2021 17:00:19 UTC] PHP   6. ltrim() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\formatting.php:4315
+[12-Jul-2021 20:53:41 UTC] PHP Parse error:  syntax error, unexpected ''show_in_nav_menus'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\functions.php on line 90
+[12-Jul-2021 20:53:41 UTC] PHP Parse error:  syntax error, unexpected ''show_in_nav_menus'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\functions.php on line 90
+[12-Jul-2021 20:53:41 UTC] PHP Parse error:  syntax error, unexpected ''show_in_nav_menus'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\functions.php on line 90
+[12-Jul-2021 20:53:42 UTC] PHP Parse error:  syntax error, unexpected ''show_in_nav_menus'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\functions.php on line 90
+[12-Jul-2021 22:28:23 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\archive-service.php on line 68
+[12-Jul-2021 22:28:23 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\archive-service.php on line 68
