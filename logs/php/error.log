@@ -74,3 +74,75 @@
 [12-Jul-2021 20:53:42 UTC] PHP Parse error:  syntax error, unexpected ''show_in_nav_menus'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\functions.php on line 90
 [12-Jul-2021 22:28:23 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\archive-service.php on line 68
 [12-Jul-2021 22:28:23 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\archive-service.php on line 68
+[15-Jul-2021 11:29:17 UTC] PHP Warning:  copy(C:/Users/COBNETCKNN/Local Sites/wpvmg/app/public/wp-content/upgrade/regenerate-thumbnails.3.1.5-Qh4Muu/regenerate-thumbnails/dist/build.js.LICENSE.txt): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 309
+[15-Jul-2021 11:29:17 UTC] PHP Stack trace:
+[15-Jul-2021 11:29:17 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\admin-ajax.php:0
+[15-Jul-2021 11:29:17 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\admin-ajax.php:187
+[15-Jul-2021 11:29:17 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\plugin.php:484
+[15-Jul-2021 11:29:17 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php:316
+[15-Jul-2021 11:29:17 UTC] PHP   5. wp_ajax_install_plugin() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php:292
+[15-Jul-2021 11:29:17 UTC] PHP   6. Plugin_Upgrader->install() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\ajax-actions.php:4354
+[15-Jul-2021 11:29:17 UTC] PHP   7. Plugin_Upgrader->run() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-plugin-upgrader.php:137
+[15-Jul-2021 11:29:17 UTC] PHP   8. Plugin_Upgrader->install_package() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-upgrader.php:797
+[15-Jul-2021 11:29:17 UTC] PHP   9. copy_dir() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-upgrader.php:595
+[15-Jul-2021 11:29:17 UTC] PHP  10. copy_dir() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\file.php:1816
+[15-Jul-2021 11:29:17 UTC] PHP  11. WP_Filesystem_Direct->copy() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\file.php:1792
+[15-Jul-2021 11:29:17 UTC] PHP  12. copy() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php:309
+[15-Jul-2021 11:29:17 UTC] PHP Warning:  chmod(): No such file or directory in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 173
+[15-Jul-2021 11:29:17 UTC] PHP Stack trace:
+[15-Jul-2021 11:29:17 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\admin-ajax.php:0
+[15-Jul-2021 11:29:17 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\admin-ajax.php:187
+[15-Jul-2021 11:29:17 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\plugin.php:484
+[15-Jul-2021 11:29:17 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php:316
+[15-Jul-2021 11:29:17 UTC] PHP   5. wp_ajax_install_plugin() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php:292
+[15-Jul-2021 11:29:17 UTC] PHP   6. Plugin_Upgrader->install() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\ajax-actions.php:4354
+[15-Jul-2021 11:29:17 UTC] PHP   7. Plugin_Upgrader->run() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-plugin-upgrader.php:137
+[15-Jul-2021 11:29:17 UTC] PHP   8. Plugin_Upgrader->install_package() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-upgrader.php:797
+[15-Jul-2021 11:29:17 UTC] PHP   9. copy_dir() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-upgrader.php:595
+[15-Jul-2021 11:29:17 UTC] PHP  10. copy_dir() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\file.php:1816
+[15-Jul-2021 11:29:17 UTC] PHP  11. WP_Filesystem_Direct->copy() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\file.php:1792
+[15-Jul-2021 11:29:17 UTC] PHP  12. WP_Filesystem_Direct->chmod() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php:312
+[15-Jul-2021 11:29:17 UTC] PHP  13. chmod() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php:173
+[15-Jul-2021 11:29:17 UTC] PHP Warning:  chmod(): No such file or directory in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 173
+[15-Jul-2021 11:29:17 UTC] PHP Stack trace:
+[15-Jul-2021 11:29:17 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\admin-ajax.php:0
+[15-Jul-2021 11:29:17 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\admin-ajax.php:187
+[15-Jul-2021 11:29:17 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\plugin.php:484
+[15-Jul-2021 11:29:17 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php:316
+[15-Jul-2021 11:29:17 UTC] PHP   5. wp_ajax_install_plugin() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php:292
+[15-Jul-2021 11:29:17 UTC] PHP   6. Plugin_Upgrader->install() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\ajax-actions.php:4354
+[15-Jul-2021 11:29:17 UTC] PHP   7. Plugin_Upgrader->run() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-plugin-upgrader.php:137
+[15-Jul-2021 11:29:17 UTC] PHP   8. Plugin_Upgrader->install_package() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-upgrader.php:797
+[15-Jul-2021 11:29:17 UTC] PHP   9. copy_dir() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-upgrader.php:595
+[15-Jul-2021 11:29:17 UTC] PHP  10. copy_dir() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\file.php:1816
+[15-Jul-2021 11:29:17 UTC] PHP  11. WP_Filesystem_Direct->chmod() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\file.php:1794
+[15-Jul-2021 11:29:17 UTC] PHP  12. chmod() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php:173
+[15-Jul-2021 11:29:17 UTC] PHP Warning:  copy(C:/Users/COBNETCKNN/Local Sites/wpvmg/app/public/wp-content/upgrade/regenerate-thumbnails.3.1.5-Qh4Muu/regenerate-thumbnails/dist/build.js.LICENSE.txt): failed to open stream: No such file or directory in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 309
+[15-Jul-2021 11:29:17 UTC] PHP Stack trace:
+[15-Jul-2021 11:29:17 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\admin-ajax.php:0
+[15-Jul-2021 11:29:17 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\admin-ajax.php:187
+[15-Jul-2021 11:29:17 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\plugin.php:484
+[15-Jul-2021 11:29:17 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php:316
+[15-Jul-2021 11:29:17 UTC] PHP   5. wp_ajax_install_plugin() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php:292
+[15-Jul-2021 11:29:17 UTC] PHP   6. Plugin_Upgrader->install() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\ajax-actions.php:4354
+[15-Jul-2021 11:29:17 UTC] PHP   7. Plugin_Upgrader->run() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-plugin-upgrader.php:137
+[15-Jul-2021 11:29:17 UTC] PHP   8. Plugin_Upgrader->install_package() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-upgrader.php:797
+[15-Jul-2021 11:29:17 UTC] PHP   9. copy_dir() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-upgrader.php:595
+[15-Jul-2021 11:29:17 UTC] PHP  10. copy_dir() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\file.php:1816
+[15-Jul-2021 11:29:17 UTC] PHP  11. WP_Filesystem_Direct->copy() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\file.php:1795
+[15-Jul-2021 11:29:17 UTC] PHP  12. copy() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php:309
+[15-Jul-2021 11:29:17 UTC] PHP Warning:  chmod(): No such file or directory in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 173
+[15-Jul-2021 11:29:17 UTC] PHP Stack trace:
+[15-Jul-2021 11:29:17 UTC] PHP   1. {main}() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\admin-ajax.php:0
+[15-Jul-2021 11:29:17 UTC] PHP   2. do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\admin-ajax.php:187
+[15-Jul-2021 11:29:17 UTC] PHP   3. WP_Hook->do_action() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\plugin.php:484
+[15-Jul-2021 11:29:17 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php:316
+[15-Jul-2021 11:29:17 UTC] PHP   5. wp_ajax_install_plugin() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-includes\class-wp-hook.php:292
+[15-Jul-2021 11:29:17 UTC] PHP   6. Plugin_Upgrader->install() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\ajax-actions.php:4354
+[15-Jul-2021 11:29:17 UTC] PHP   7. Plugin_Upgrader->run() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-plugin-upgrader.php:137
+[15-Jul-2021 11:29:17 UTC] PHP   8. Plugin_Upgrader->install_package() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-upgrader.php:797
+[15-Jul-2021 11:29:17 UTC] PHP   9. copy_dir() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-upgrader.php:595
+[15-Jul-2021 11:29:17 UTC] PHP  10. copy_dir() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\file.php:1816
+[15-Jul-2021 11:29:17 UTC] PHP  11. WP_Filesystem_Direct->copy() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\file.php:1795
+[15-Jul-2021 11:29:17 UTC] PHP  12. WP_Filesystem_Direct->chmod() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php:312
+[15-Jul-2021 11:29:17 UTC] PHP  13. chmod() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php:173

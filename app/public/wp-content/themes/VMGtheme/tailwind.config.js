@@ -17,6 +17,11 @@ module.exports = {
         servicecontent: '#595E64',
         brandcontent: '#00A077',
         bottomclient: '#424A4D',
+        redbutton: '#AE0404',
+        industriestitle: '#F82A2D',
+        yellowbtn: '#F9A724',
+        yellowfont: '#FFDB5B',
+        
 
       }
     },

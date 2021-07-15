@@ -8,7 +8,7 @@
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: visible;
 }
 
 .menu{
@@ -148,4 +148,48 @@ html, body {
 .service__icon {
     width: 50px;
     height: 50px;
+}
+
+.industries__bg {
+    width: 100%;
+    position: absolute;
+    top: 12%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.industries__container {
+    position: relative;
+    z-index: 2;
+}
+
+#aboutus {
+    position: relative;
+    height: 100%;
+
+}
+
+.aboutus__content {
+    position: relative;
+    background-color: white;
+    background: url("../images/aboutusBG.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.aboutus__paragraph {
+    p {
+        margin-top: 2.8rem;
+    }
+}
+
+.aboutus__card {
+    position: absolute;
+    top: 10%;
+    left: 14%;
+    bottom: 10%;
+    right:14%;
 }

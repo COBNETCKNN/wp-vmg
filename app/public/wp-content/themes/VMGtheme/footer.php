@@ -19,17 +19,37 @@
                 </div>
             </div>
             <!-- SOCIAL MEDIA ICONS -->
+
+            <?php 
+            
+            $args = array(
+                'page_id' => 115,
+            );
+
+            $socialMediaLinksQuery = new WP_Query($args);
+
+            while($socialMediaLinksQuery->have_posts()){
+                $socialMediaLinksQuery->the_post();
+            
+            $facebookLink = get_field('facebook_link');
+            $instagramLink = get_field('instagram_link');
+            $twitterLink = get_field('twitter_link');
+            
+            ?>
             <div class="text-gray-300 text-3xl my-auto">
-                <a href="">
+                <a href="<?php echo $facebookLink ?>" target=”_blank”>
                     <i class="fab fa-facebook-square mx-3 hover:text-gray-400"></i>
                 </a>
-                <a href="">
+                <a href="<?php echo $instagramLink ?>" target=”_blank”>
                     <i class="fab fa-instagram-square mx-3 hover:text-gray-400"></i>
                 </a>
-                <a href="">
+                <a href="<?php echo $twitterLink ?>" target=”_blank”>
                     <i class="fab fa-twitter-square mx-3 hover:text-gray-400"></i>
                 </a>       
             </div>
+            <?php }
+                wp_reset_postdata();
+            ?>
         </div>
 
         <!-- FOOTER GREY LINE -->

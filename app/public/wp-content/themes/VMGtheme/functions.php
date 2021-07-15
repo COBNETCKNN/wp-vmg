@@ -24,6 +24,7 @@ add_theme_support('menus');
 /* CUSTOM IMAGE SIZES */
 add_image_size('servicesIcon', 50, 50, true);
 add_image_size('processThumbnail', 466, 232, true);
+add_image_size('aboutUsThumbnail', 466, 440, true);
 
 /* CUSTOM LOGO */
 function vmg_custom_logo() {
@@ -62,12 +63,15 @@ function hide_editor() {
     if($homepgname == 'Hero'){ 
         remove_post_type_support('page', 'editor');
         }
-
-    $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
-    if( !isset( $post_id ) ) return;
-
+//Our Clients Page
     $ourClients = get_the_title($post_id);
     if($homepgname == 'Our Clients'){ 
+        remove_post_type_support('page', 'editor');
+        }
+
+//Social Media Links Page
+    $socialMediaLinks = get_the_title($post_id);
+    if($homepgname == 'Social Media Links'){ 
         remove_post_type_support('page', 'editor');
         }
 }
@@ -104,8 +108,24 @@ function vmg_post_types() {
             'all_items' => 'All Processes',
             'singular_name' => 'Process'
         ),
-        'menu_icon' => 'dashicons-admin-generic',
+        'menu_icon' => 'dashicons-hammer',
         'supports' => array('title', 'editor', 'thumbnail'),
+        'has_archive' => true
+    ));
+
+    //custom post type for industries we serve
+    register_post_type('industries', array(
+        'public' => true,
+        'labels' => array(
+            'name' => 'Our Industries',
+            'add_new' => 'Add New Industrie',
+            'add_new_item' => 'Add New Industrie',
+            'edit_item' => 'Edit Industrie',
+            'all_items' => 'All Industries',
+            'singular_name' => 'Industrie'
+        ),
+        'menu_icon' => 'dashicons-admin-generic',
+        'supports' => array('title', 'editor'),
         'has_archive' => true
     ));
 
