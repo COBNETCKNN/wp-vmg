@@ -42,7 +42,7 @@ add_action( 'after_setup_theme', 'vmg_custom_logo' );
 function footer_menu() {
     register_nav_menus(
         array(
-            'main-menu' => 'Main Menu',
+            'header-menu' => 'Header Menu',
             'footer-menu' => 'Footer Menu',
             'footer-extra-menu' => 'Extra Footer Menu',
         )

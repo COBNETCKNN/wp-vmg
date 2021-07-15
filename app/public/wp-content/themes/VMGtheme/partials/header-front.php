@@ -13,7 +13,7 @@
             </div>
             <!-- MAIN MENU SECTION -->
             <div class="flex justify-center my-auto font-dmsans text-white font-bold">
-              <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>      
+              <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>      
           </div>
           <!-- CONTACT BUTTON -->
           <a href="<?php echo site_url('/contact-us');?>">

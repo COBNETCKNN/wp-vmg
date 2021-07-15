@@ -19,42 +19,46 @@
         </div>
     </div>
 
-        <!-- CONTENT -->
-        <div class="aboutus__content">
-            <div class="container mx-auto">
-                <div class="aboutus__card py-20 px-11 bg-white rounded-3xl shadow-xl">
-                    <?php 
+    <!-- CONTENT -->
+    <div class="aboutus__content">
+        <div class="container mx-auto">
+            <div class="aboutus__card py-20 my-20 px-11 bg-white rounded-3xl shadow-xl">
+                <?php 
+                
+                //query for about us page
+
+                $args = array(
+                    'page_id' => 93,
+                );
+
+                $aboutUsQuery = new WP_Query($args);
+
+                while($aboutUsQuery->have_posts()){
+                    $aboutUsQuery->the_post(); 
                     
-                    //query for about us page
+                //acf field for title
 
-                    $args = array(
-                        'page_id' => 93,
-                    );
-
-                    $aboutUsQuery = new WP_Query($args);
-
-                    while($aboutUsQuery->have_posts()){
-                        $aboutUsQuery->the_post(); 
-                        
-                    //acf field for title
-
-                    $aboutUsTitle = get_field('title_about_us');
-                        
-                    ?>
+                $aboutUsTitle = get_field('title_about_us');
                     
-                    <?php the_post_thumbnail('aboutUsThumbnail', array('class' => 'rounded-3xl float-left mr-10')); ?>
-                    <h1 class="text-2xl text-servicetitle font-bold mb-10"><?php echo $aboutUsTitle ?></h1>
-                    <div class="aboutus__paragraph text-lg text-servicetitle"><?php echo the_content(); ?></div>
-                    
-                   <?php } 
-                    wp_reset_postdata();
-                   ?>
-                </div>
-            </div>
+                ?>
+                
+                <?php the_post_thumbnail('aboutUsThumbnail', array('class' => 'rounded-3xl float-left mr-10 my-10')); ?>
+                <h1 class="text-2xl text-servicetitle font-bold mb-10"><?php echo $aboutUsTitle ?></h1>
+                <div class="aboutus__paragraph text-lg text-servicetitle"><?php echo the_content(); ?></div>
+                
+                <?php } 
+                wp_reset_postdata();
+                ?>
+             </div>
         </div>
+    </div>
+    <!-- BACKGROUND IMAGE -->
+    <div class="aboutus_bg">
+        <img class="w-full" src="<?php echo get_template_directory_uri() . '/images/aboutusBG.png'; ?>" alt="">
+    </div>
 
-        <!-- AD PLACE -->
-        <?php get_template_part('partials/ad', 'prospect'); ?>
+    <!-- AD PLACE -->
+    <?php get_template_part('partials/ad', 'prospect'); ?>
     
 <?php get_footer(); ?>
 </section>

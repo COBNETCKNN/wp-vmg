@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
 <section id="industries" class="w-screen font-dmsans relative">
-    <img class="industries__bg" src="<?php echo get_template_directory_uri() . '/images/industriesBG.jpg'; ?>" alt="">
-
     <div class="industries__container container mx-auto">
         <!-- GRID FOR HEADING -->
         <div class="grid grid-cols-3 gap-4 py-10">
@@ -55,6 +53,10 @@
 
     <!-- OUR CLIENTS SECTION -->
     <?php get_template_part('partials/our', 'clients'); ?>
+    </div>
+    <!-- BACKGROUND IMAGE -->
+    <div class="industries__bg">
+        <img class="w-full" src="<?php echo get_template_directory_uri() . '/images/industriesBG.jpg'; ?>" alt="">
     </div>
 </section>
 

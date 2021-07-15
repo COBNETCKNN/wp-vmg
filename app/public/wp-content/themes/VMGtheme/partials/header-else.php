@@ -1,4 +1,4 @@
-<nav id="navbar" class="py-12 bg-header w-full">
+<nav id="navbar" class="py-12 bg-white w-full">
     <div class="container mx-auto">
         <div class="flex justify-between">
             <!-- LOGO SECTION -->
@@ -13,7 +13,12 @@
             </div>
             <!-- MAIN MENU SECTION -->
             <div class="flex justify-center my-auto font-dmsans text-white font-bold">
-              <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>      
+            <div class="text-menuitems text-bold">
+              <?php wp_nav_menu(array(
+                  'theme_location' => 'header-menu',
+                  'menu_class'=> 'menu menu-else'
+                  )); ?>   
+            </div>    
           </div>
           <!-- CONTACT BUTTON -->
           <a href="<?php echo site_url('/contact-us');?>">

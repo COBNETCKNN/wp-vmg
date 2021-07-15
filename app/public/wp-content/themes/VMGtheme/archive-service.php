@@ -57,6 +57,10 @@
              <?php } ?>
         </div>
     </div>
+    <!-- BACKGROUND IMAGE -->
+    <div class="whatwedo__bg">
+        <img class="w-full" src="<?php echo get_template_directory_uri() . '/images/whatwedoBG.png'; ?>" alt="">
+    </div>
 </section>
 
 

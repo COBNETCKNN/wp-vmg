@@ -21,6 +21,7 @@ module.exports = {
         industriestitle: '#F82A2D',
         yellowbtn: '#F9A724',
         yellowfont: '#FFDB5B',
+        menuitems: '#3B3E43',
         
 
       }

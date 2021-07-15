@@ -26,7 +26,7 @@
             <div class="container mx-auto">
                 <div class="py-20 px-11 mb-20 mt-36 w-11/12 bg-white rounded-3xl shadow-xl mx-auto">
                     <div class="">
-                    <?php the_post_thumbnail('aboutUsThumbnail', array('class' => 'rounded-3xl float-left mr-10')); ?>
+                    <?php the_post_thumbnail('aboutUsThumbnail', array('class' => 'rounded-3xl float-left mr-10 my-10')); ?>
                     </div>
                     <h1 class="text-2xl text-servicetitle font-bold mb-10"><?php the_title(); ?></h1>
                     <div class="aboutus__paragraph text-lg text-servicetitle"><?php echo the_content(); ?></div>

@@ -8,7 +8,7 @@
 
 html, body {
     max-width: 100%;
-    overflow-x: visible;
+    overflow-x: hidden;
 }
 
 .menu{
@@ -27,6 +27,14 @@ html, body {
 
 .footer-line {
     padding: 0.5px;
+}
+
+.menu-main-menu-container {
+    .menu-else {
+				.menu-item:hover {
+					color: #6B7280;
+				}
+    }
 }
 
 .menu-extra-footer-menu-container {
@@ -52,51 +60,31 @@ html, body {
     }
 }
 
-.hero__background {
-    height: 100%;
-    width: 100%;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:contain;
+.hero__heading {
+    position: absolute;
+    top: 33%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.hero__description {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align:center;
 }
 
 .hero__button {
     position: absolute;
-    z-index: 10;
-    margin-left: auto;
-    margin-right: auto;
+    top: 51%;
     left: 0;
     right: 0;
-    text-align: center;
-    top: 55vh;
-}
-
-.hero__vector {
-    position: absolute;
-    z-index: 10;
-    top: 20vh;
-    right:0;
-}
-
-.hero__stats {
-    position: absolute;
-    z-index: 10;
-    bottom: -38vh;
-    right: 4%;
-}
-
-.hero__messages {
-    position: absolute;
-    z-index: 10;
-    top: 68vh;
-    right: 10%;
-}
-
-.hero__card {
-    position: absolute;
-    z-index: 10;
-    bottom: -20vh;
-    left: 12%;
+    margin: 0 auto;
+    text-align:center;
 }
 
 #about {
@@ -137,12 +125,13 @@ html, body {
     height: 130px;
 }
 
-.service__content {
-    background-color: white;
-    background: url("../images/whatwedoBG.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    height: 2350px;
+.service__bg {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .service__icon {
@@ -150,19 +139,22 @@ html, body {
     height: 50px;
 }
 
-.industries__bg {
-    width: 100%;
+.whatwedo__bg {
     position: absolute;
-    top: 12%;
+    top: 45%;
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
-.industries__container {
-    position: relative;
-    z-index: 2;
+.industries__bg {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 #aboutus {
@@ -171,27 +163,10 @@ html, body {
 
 }
 
-.aboutus__content {
-    position: relative;
-    background-color: white;
-    background: url("../images/aboutusBG.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 100%;
-}
-
 .aboutus__paragraph {
     p {
         margin-top: 2.8rem;
     }
-}
-
-.aboutus__card {
-    position: absolute;
-    top: 10%;
-    left: 14%;
-    bottom: 10%;
-    right:14%;
 }
 
 .casestudies__bg {
@@ -203,9 +178,27 @@ html, body {
     z-index: -1;
 }
 
+.blog__bg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
 .post__bg {
     position: absolute;
     top: 15%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.aboutus_bg {
+    position: absolute;
+    top: 30%;
     left: 0;
     bottom: 0;
     right: 0;

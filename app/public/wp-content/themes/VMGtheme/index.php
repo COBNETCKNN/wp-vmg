@@ -60,7 +60,7 @@
         wp_reset_postdata();?>
     </div>
 
-    <div class="casestudies__bg">
+    <div class="blog__bg">
         <img class="w-full" src="<?php echo get_template_directory_uri() . '/images/casestudiesBG.jpg'; ?>" alt="">
     </div>
 
