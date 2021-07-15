@@ -146,3 +146,4 @@
 [15-Jul-2021 11:29:17 UTC] PHP  11. WP_Filesystem_Direct->copy() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\file.php:1795
 [15-Jul-2021 11:29:17 UTC] PHP  12. WP_Filesystem_Direct->chmod() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php:312
 [15-Jul-2021 11:29:17 UTC] PHP  13. chmod() C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-admin\includes\class-wp-filesystem-direct.php:173
+[15-Jul-2021 18:33:48 UTC] PHP Parse error:  syntax error, unexpected ',' in C:\Users\COBNETCKNN\Local Sites\wpvmg\app\public\wp-content\themes\VMGtheme\index.php on line 45

@@ -193,3 +193,21 @@ html, body {
     bottom: 10%;
     right:14%;
 }
+
+.casestudies__bg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.post__bg {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}

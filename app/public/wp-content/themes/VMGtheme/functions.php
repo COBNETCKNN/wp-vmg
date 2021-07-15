@@ -129,6 +129,23 @@ function vmg_post_types() {
         'has_archive' => true
     ));
 
+    //custom post type for case studies
+    register_post_type('casestudies', array(
+        'public' => true,
+        'labels' => array(
+            'name' => 'Case Studies',
+            'add_new' => 'Add New Case Study',
+            'add_new_item' => 'Add New Case Study',
+            'edit_item' => 'Edit Case Study',
+            'all_items' => 'All Case Studies',
+            'singular_name' => 'Case Study'
+        ),
+        'menu_icon' => 'dashicons-chart-bar',
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'has_archive' => true,
+        'taxonomies'  => array( 'category' ),
+    ));
+
 }
 add_action('init', 'vmg_post_types');
 
