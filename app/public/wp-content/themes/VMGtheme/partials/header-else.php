@@ -12,7 +12,7 @@
                 </a>
             </div>
             <!-- MAIN MENU SECTION -->
-            <div class="flex justify-center my-auto font-dmsans text-white font-bold">
+            <div class="flex justify-center my-auto font-dmsans text-white font-bold mx-auto">
             <div class="text-menuitems text-bold">
               <?php wp_nav_menu(array(
                   'theme_location' => 'header-menu',
@@ -20,10 +20,6 @@
                   )); ?>   
             </div>    
           </div>
-          <!-- CONTACT BUTTON -->
-          <a href="<?php echo site_url('/contact-us');?>">
-            <button class="bg-btnpurple hover:bg-purple-700 text-sm text-white uppercase font-dmsans py-2 px-8 rounded-3xl tracking-wider">Contact</button>
-         </a>
         </div>
     </div>
 </nav>
