@@ -25,8 +25,11 @@ add_theme_support('menus');
 add_image_size('servicesIcon', 50, 50, true);
 add_image_size('processThumbnail', 466, 232, true);
 add_image_size('aboutUsThumbnail', 466, 440, true);
+add_image_size('landingPageAboutImage', 700, 450, true);
+add_image_size('landingPageHeroBG', 1920, 820, true);
 
 /* CUSTOM LOGO */
+/*
 function vmg_custom_logo() {
 	
 	add_theme_support( 'custom-logo', array(
@@ -37,6 +40,7 @@ function vmg_custom_logo() {
 
 }
 add_action( 'after_setup_theme', 'vmg_custom_logo' );
+*/
 
 /* REGISTRATION OF FOOTER MENUs */
 function footer_menu() {
@@ -144,6 +148,21 @@ function vmg_post_types() {
         'supports' => array('title', 'editor', 'thumbnail'),
         'has_archive' => true,
         'taxonomies'  => array( 'category' ),
+    ));
+
+    //custom post type for landing pages
+    register_post_type('landingpage', array(
+        'public' => true,
+        'labels' => array(
+            'name' => 'Landing Pages',
+            'add_new' => 'Add New Landing Page',
+            'add_new_item' => 'Add New Landing Page',
+            'edit_item' => 'Edit Landing Page',
+            'all_items' => 'All Landing Pages',
+            'singular_name' => 'Landing Page'
+        ),
+        'menu_icon' => 'dashicons-format-gallery',
+        'supports' => array('title', 'thumbnail'),
     ));
 
 }
