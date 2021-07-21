@@ -4,7 +4,11 @@
             <!-- LOGO SECTION -->
             <div class="logo flex justify-start">
                 <a href="<?php echo home_url(); ?>">
-                    <img class="w-full" src="<?php echo get_template_directory_uri() . '/images/VMG-Logo-Dark.png'; ?>" alt="">
+                <?php 
+                    $custom_logo_id = get_theme_mod( 'custom_logo' );
+                    $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+                    echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="">';
+                ?>
                 </a>
             </div>
             <!-- MAIN MENU SECTION -->

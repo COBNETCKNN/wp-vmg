@@ -26,10 +26,10 @@ add_image_size('servicesIcon', 50, 50, true);
 add_image_size('processThumbnail', 466, 232, true);
 add_image_size('aboutUsThumbnail', 466, 440, true);
 add_image_size('landingPageAboutImage', 700, 450, true);
-add_image_size('landingPageHeroBG', 1920, 820, true);
+add_image_size('landingPageHeroBG', 1920, 920, true);
 
 /* CUSTOM LOGO */
-/*
+
 function vmg_custom_logo() {
 	
 	add_theme_support( 'custom-logo', array(
@@ -40,7 +40,6 @@ function vmg_custom_logo() {
 
 }
 add_action( 'after_setup_theme', 'vmg_custom_logo' );
-*/
 
 /* REGISTRATION OF FOOTER MENUs */
 function footer_menu() {
@@ -176,4 +175,10 @@ function add_file_types_to_uploads($file_types){
     return $file_types;
     }
 add_filter('upload_mimes', 'add_file_types_to_uploads');
+
+/* EXCLUDE NODE_MODULES FROM ALL IN ONE MIGRATION */
+add_filter('ai1wm_exclude_content_from_export', function($exclude_filters) {
+  $exclude_filters[] = 'themes/VMGtheme/node_modules';
+  return $exclude_filters;
+});
 

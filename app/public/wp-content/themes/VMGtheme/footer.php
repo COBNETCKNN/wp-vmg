@@ -6,7 +6,11 @@
             <!-- LOGO SECTION -->
             <div class="flex justify-start">
                 <a href="<?php echo home_url(); ?>">
-                    <img class="w-full" src="<?php echo get_template_directory_uri() . '/images/VMG-Logo-Light.png'; ?>" alt="">
+                    <?php 
+                        $custom_logo_id = get_theme_mod( 'custom_logo' );
+                        $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+                        echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="">';
+                    ?>
                 </a>
 
                 <!-- MAIN MENU SECTION -->
@@ -25,24 +29,35 @@
             $socialMediaLinksQuery = new WP_Query($args);
 
             while($socialMediaLinksQuery->have_posts()){
-                $socialMediaLinksQuery->the_post();
-            
-            $facebookLink = get_field('facebook_link');
-            $instagramLink = get_field('instagram_link');
-            $twitterLink = get_field('twitter_link');
-            
-            ?>
-            <div class="text-gray-300 text-3xl my-auto">
-                <a href="<?php echo $facebookLink ?>" target=”_blank”>
-                    <i class="fab fa-facebook-square mx-3 hover:text-gray-400"></i>
-                </a>
-                <a href="<?php echo $instagramLink ?>" target=”_blank”>
-                    <i class="fab fa-instagram-square mx-3 hover:text-gray-400"></i>
-                </a>
-                <a href="<?php echo $twitterLink ?>" target=”_blank”>
-                    <i class="fab fa-twitter-square mx-3 hover:text-gray-400"></i>
-                </a>       
+                $socialMediaLinksQuery->the_post(); ?>
+
+            <!-- TOP BENEFITS REPEATER -->
+            <?php
+            // Check rows exists.
+            if( have_rows('social_media_icons_and_links') ): ?>
+
+            <div class="flex justify-center">
+
+                <?php  // Loop through rows.
+                while( have_rows('social_media_icons_and_links') ) : the_row(); ?>
+
+                
+                    <a href="<?php echo get_sub_field('social_media_link'); ?>" target=”_blank”>
+                    <img class="h-9 w-9 mx-2"src="<?php echo get_sub_field('social_media_icon');?>" alt="">
+                    </a>
+                
+
+                <?php
+                // End loop.
+                endwhile; ?>
             </div>
+
+            <?php
+            // No value.
+            else :
+            // Do something...
+            endif;
+            ?>
             <?php }
                 wp_reset_postdata();
             ?>
