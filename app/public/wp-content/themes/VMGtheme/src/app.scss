@@ -87,26 +87,11 @@ html, body {
     text-align:center;
 }
 
-#about {
-    background-color: white;
-    background: url("../images/aboutBackground.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    height: 100vh;
-    margin-top: -250px;
-}
+
 
 .attachment-servicesIcon {
     width: 50px;
     height: 50px;
-}
-
-#process {
-    background-color: white;
-    background: url("../images/processBackground.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    height: 1639px;
 }
 
 .process__icon {
@@ -228,4 +213,105 @@ html, body {
 .landingpage_ourprocess__image {
     width: 1000px;
     height: 450px;
+}
+
+.frontpage_about__bg {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.fontpage_process__bg {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .top-navbar {
+        background-color: #16b4eb;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menu-item {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .top-navbar {
+        position: relative;
+        z-index: 10;
+    }
+
+    .hero__heading {
+        position: absolute;
+        top: 15%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align:center;
+    }
+
+    .hero__description {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align:center;
+    }
+
+    .hero__image {
+        height: 65%;
+    }
+
+    .fontpage_process__bg {
+        position: absolute;
+        top: 2%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .slic-slide {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .menu-main-menu-container {
+        .menu-else {
+                    .menu-item {
+                        color: #fff;
+                    }
+        }
+}
+
+.menu-main-menu-container {
+    .menu {
+				.menu-item:hover {
+					color: #6B7280;
+				}
+    }
+}
+
+.whatwedo__bg {
+    width: 200%;
+}
+
 }

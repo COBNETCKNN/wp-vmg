@@ -1,4 +1,4 @@
-<div class="container mx-auto pt-28 pb-48">
+<div class="container mx-auto pt-0 lg:pt-28 pb-20 lg:pb-48">
     <!-- HEADING TEXT -->
     <div class="heading text-center">
         <p class="text-brandcontent uppercase text-xs font-bold tracking-widest">brands</p>
@@ -6,7 +6,7 @@
     </div>
 
 <!-- SLDIER -->
-<div class="client__slider my-12">
+<div class="client__slider my-2 lg:my-12">
 <?php 
 
 $args = array(
@@ -23,7 +23,7 @@ while($clientsQuery->have_posts()){
         <ul class="slick">
             <?php foreach( $images as $image ): ?>
                 <li class="">                 
-                <img class="clients__image flex justify-center mx-auto" src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                <img class="clients__image flex justify-center px-3 lg:px-0 mx-auto" src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                 </li>
             <?php endforeach; ?>
         </ul>
