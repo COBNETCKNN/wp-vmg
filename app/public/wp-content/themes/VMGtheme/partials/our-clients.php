@@ -1,4 +1,4 @@
-<div class="container mx-auto pt-0 lg:pt-28 pb-20 lg:pb-48">
+<div class="container mx-auto pt-28 pb-20 lg:pb-48">
     <!-- HEADING TEXT -->
     <div class="heading text-center">
         <p class="text-brandcontent uppercase text-xs font-bold tracking-widest">brands</p>

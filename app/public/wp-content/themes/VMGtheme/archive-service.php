@@ -8,7 +8,7 @@
             <div class="col-span-2">
                 <p class="text-btnpurple text-center lg:text-left uppercase text-xs font-bold tracking-widest">How it works</p>
                 <h1 class="pt-8 text-4xl lg:text-7xl text-center lg:text-left text-servicetitle font-medium">What We Do</h1>
-                <p class="text-bottomclient text-center lg:text-left text-xl mt-4 lg:mt-8">We know the best solution for all of your business ideas and we can help you<br> solve all business problems</p>
+                <p class="text-bottomclient text-center lg:text-left text-xl mt-4 lg:mt-8">We know the best solution for all of your business ideas and we can help you solve all business problems</p>
             </div>
             <!-- GET IN TOUCH BUTTON -->
             <div class="my-5 lg:my-auto text-center lg:text-right">
@@ -39,8 +39,8 @@
                 
             ?>
 
-        <div class="py-5 lg:py-11 px-5 lg:px-20 bg-white rounded-3xl shadow-xl mb-10 w-11/12 mx-auto">
-            <div class="grid lg:grid-cols-2 gap-4">
+        <div class="py-5 lg:py-11 px-5 lg:px-10 xl:px-20 bg-white rounded-3xl shadow-xl mb-10 w-11/12 mx-auto">
+            <div class="grid lg:grid-cols-2 gap-10 xl:gap-4">
                 <!-- IMAGE -->
                 <div class="flex justify-start">
                 <?php the_post_thumbnail('processThumbnail', array('class' => 'rounded-3xl flex justify-center')); ?>

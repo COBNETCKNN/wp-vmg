@@ -13,8 +13,8 @@
 <!-- ABOUT SECTION -->
 <section id="about" class="w-screen font-dmsans lg:pb-20 relative">
   <div class="container mx-auto">
-    <h1 class="text-servicetitle text-5xl font-medium lg:font-normal text-center lg:text-left lg:text-8xl">What we Do</h1>
-      <div class="flex justify-center grid lg:grid-cols-3 gap-0 mt-5 lg:mt-16">
+    <h1 class="text-servicetitle text-5xl font-medium lg:font-normal text-center lg:text-left lg:text-7xl xl:text-8xl">What we Do</h1>
+      <div class="flex justify-center grid lg:grid-cols-3 gap-4 mt-5 lg:mt-16">
 
     <?php 
     

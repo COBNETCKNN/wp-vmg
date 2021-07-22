@@ -207,7 +207,6 @@ html, body {
     right: 0;
     z-index: -1;
     width: 100%;
-    height: 800px;
 }
 
 .landingpage_ourprocess__image {
@@ -233,6 +232,7 @@ html, body {
     z-index: -1;
 }
 
+// small screens
 @media (max-width: 640px) {
     .container {
         padding-left: 1rem;
@@ -261,7 +261,7 @@ html, body {
 
     .hero__heading {
         position: absolute;
-        top: 15%;
+        top: 10%;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -270,7 +270,7 @@ html, body {
 
     .hero__description {
         position: absolute;
-        top: 20%;
+        top: 15%;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -283,10 +283,11 @@ html, body {
 
     .fontpage_process__bg {
         position: absolute;
-        top: 2%;
+        top: 5%;
         left: 0;
-        right: 0;
-        margin: 0 auto;
+        img {
+            height: 100%;
+        }
     }
 
     .slic-slide {
@@ -300,18 +301,147 @@ html, body {
                         color: #fff;
                     }
         }
-}
-
-.menu-main-menu-container {
-    .menu {
-				.menu-item:hover {
-					color: #6B7280;
-				}
     }
+
+    .menu-main-menu-container {
+        .menu {
+                    .menu-item:hover {
+                        color: #6B7280;
+                    }
+        }
+    }
+
+    .whatwedo__bg {
+        width: 200%;
+    }
+
+    .aboutus_bg {
+        position: absolute;
+        top: 47%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 200%;
+    }
+
+    .industries__bg {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 200%;
+    }
+
+    .casestudies__bg {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 200%;
+    }
+
+    .blog__bg {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 200%;
+    }
+
+    .contactus__bg {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 200%;
+    }
+
+    .post__bg {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 200%;
+    }
+
+    .landingpage_bg {
+        img {
+            height: 100%;
+        }
+    }
+
+    .landingpage_ourprocess__image {
+        width: 500px;
+        height: 250px;
+    }
+
 }
 
-.whatwedo__bg {
-    width: 200%;
-}
+//tablet resolution
+@media (min-width: 640px) and (max-width: 1280px) {
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 
+    .hero__heading {
+        position: absolute;
+        top: 19%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align:center;
+    }
+
+    .hero__description {
+        position: absolute;
+        top: 27%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align:center;
+    }
+
+    .hero__button {
+        position: absolute;
+        top: 33%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align:center;
+    }
+
+    .menu-item {
+        margin-right: 0px;
+        margin-left: 25px;
+    }
+
+    .whatwedo__bg {
+        position: absolute;
+        top: 55%;
+        left: 0;
+    }
+
+    .aboutus_bg {
+        position: absolute;
+        top: 40%;
+        left: 0;
+    }
+
+    .industries__bg {
+        position: absolute;
+        top: 16%;
+        left: 0;
+    }
+
+    .landingpage_bg {
+        img {
+            height: 100%;
+        }
+    }
 }
