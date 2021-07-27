@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
 <!-- HERO SECTION -->
-<section id="hero bg-white w-full h-full font-dmsans">
+<section id="hero bg-white w-full h-full font-dmsans relative">
         <img class="hero__image w-full" src="<?php echo get_template_directory_uri() . '/images/HERO.png'; ?>" alt="">
         <h1 class="hero__heading text-2xl lg:text-5xl xl:text-7xl text-yellowfont font-medium"><?php bloginfo('name'); ?></h1>
         <p class="hero__description text-sm lg:text-xl text-white opacity-80 font-medium"><?php bloginfo('description') ?></p>
         <a href="<?php echo site_url('/contact-us');?>">
-          <button class="hero__button hidden lg:block bg-btnpurple hover:bg-purple-700 text-xl text-white uppercase font-dmsans py-5 px-11 rounded-full tracking-wider">Get in touch</button>
+          <button class="hero__button hidden lg:block bg-btnpurple hover:bg-purple-700 text-sm xl:text-xl text-white uppercase font-dmsans py-3 xl:py-5 px-8 xl:px-11 rounded-full tracking-wider">Get in touch</button>
         </a>
 </section>
 

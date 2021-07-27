@@ -81,10 +81,9 @@ html, body {
 .hero__button {
     position: absolute;
     top: 51%;
-    left: 0;
+    left: calc(50% - 120px);
     right: 0;
     margin: 0 auto;
-    text-align:center;
 }
 
 
@@ -232,6 +231,39 @@ html, body {
     z-index: -1;
 }
 
+//gravity form CSS
+
+.gform_heading {
+    display: none;
+}
+
+.gform_footer input[type=submit] {
+    font: dmsans;
+    color: white;
+    background-color: #00A077;
+    text-transform: uppercase;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 1.5rem;
+}
+
+.gform_wrapper.gravity-theme .gform_footer button, .gform_wrapper.gravity-theme .gform_footer input, .gform_wrapper.gravity-theme .gform_page_footer button, .gform_wrapper.gravity-theme .gform_page_footer input {
+  float:right;
+  margin-right: 1rem;
+}
+
+.gform_footer input[type=submit]:hover {
+    background-color: #34D399;
+    cursor: pointer;
+}
+
+.gform_wrapper .gform_body .gform_fields .gfield input[type=text] { border:3px solid #ffffff; background-color:#f8f9fb; }
+
+.gform_wrapper .gform_body .gform_fields .gfield textarea {border:3px solid #ffffff; background-color:#f8f9fb; }
+
+
 // small screens
 @media (max-width: 640px) {
     .container {
@@ -255,8 +287,8 @@ html, body {
     }
 
     .top-navbar {
-        position: relative;
-        z-index: 10;
+        position: absolute;
+        z-index: 1;
     }
 
     .hero__heading {
@@ -410,7 +442,7 @@ html, body {
     .hero__button {
         position: absolute;
         top: 33%;
-        left: 0;
+        left: calc(50% - 80px);
         right: 0;
         margin: 0 auto;
         text-align:center;

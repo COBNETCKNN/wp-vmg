@@ -159,7 +159,7 @@
     <!-- BOTTOM FORM -->
     <section id="bottomForm"></section>
         <div class="bg-white pt-10 pb-20">
-            <div class="container mx-auto">
+            <div class="container mx-auto xl:px-36">
                 <h2 class="text-servicetitle text-4xl xl:text-6xl font-medium text-center mb-10"><?php the_title(); ?></h2>
                 <?php     
                 $bottomContactFormShortcode = get_field('landing_pages_what_we_offer_shortcode_contact');       
